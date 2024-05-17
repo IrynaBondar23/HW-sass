@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $background_color_1;
+
+    &_nav {
+        display: grid;
+        grid-auto-flow: column;
+
+        &_item {
+            @extend .nav_style;
+        }
+
+        &_item:hover {
+            color: $main_text_color;
+            font-weight: 500;
+        }
+    }
+}

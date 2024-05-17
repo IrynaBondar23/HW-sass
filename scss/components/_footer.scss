@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 40px;
+
+    &_logo {
+        width: 290px;
+        height: 62px;
+        margin-top: 100px;
+    }
+
+    &_nav {
+        display: grid;
+        grid-auto-flow: column;
+
+        &_item {
+            @extend .nav_style;
+        }
+
+        &_item:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .copyright {
+        opacity: 0.5;
+        font-size: 14px;
+    }
+}

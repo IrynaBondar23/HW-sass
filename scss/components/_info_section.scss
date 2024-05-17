@@ -1,0 +1,38 @@
+.info_section {
+    width: 100%;
+    max-height: 900px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    background-color: $background_color_1;
+    justify-content: center;
+    padding: 20px 110px 0 110px;
+
+    &_desc {
+        align-self: center;
+    }
+
+    &_name {
+        margin-bottom: 10px;
+        font-size: $headline_font_size;
+        @include headline_text;
+    }
+
+    &_text {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 40px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+    }
+
+    &_btn {
+        @extend .btn;
+    }
+
+    &_img {
+        display: grid;
+        align-self: flex-end;
+    }
+
+}

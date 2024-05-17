@@ -1,0 +1,77 @@
+.contact_section {
+    width: 100%;
+    background-color: $background_color_3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "contact_section_title contact_section_form"
+        "... contact_section_form"
+        "contact_info submit_btn";
+    gap: 0px 190px;
+    margin-top: 190px;
+    padding-top: 120px;
+
+    &_title {
+        grid-area: contact_section_title;
+        font-size: 70px;
+        @include headline_text;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .contact_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &_email {
+            color: $span_color;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-bottom: 14px;
+            font-size: 20px;
+        }
+
+        &_adress {
+            font-size: 20px;
+        }
+    }
+
+    &_form {
+        grid-area: contact_section_form;
+        display: grid;
+        grid-auto-flow: row;
+        margin-right: 115px;
+        align-items: center;
+        justify-items: center;
+
+        & input {
+            @extend .input_style;
+            margin-bottom: 16px;
+        }
+
+        & textarea {
+            @extend .input_style;
+            margin-bottom: 30px;
+            padding-bottom: 93px;
+            resize: vertical;
+        }
+
+        .submit_btn {
+            @extend .btn;
+            display: flex;
+            justify-self: start;
+            align-items: center;
+
+            & img {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .contact_info {
+        grid-area: contact_info;
+    }
+}

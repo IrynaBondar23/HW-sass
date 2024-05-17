@@ -1,0 +1,8 @@
+body {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: minmax(80px, auto) minmax(490px, auto) minmax(390px, auto);
+    font-size: 16px;
+    color: $main_text_color;
+    @include main_text;
+}

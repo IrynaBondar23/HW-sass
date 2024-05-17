@@ -1,0 +1,28 @@
+.btn {
+    padding: 20px 61px;
+    background-color: $span_color;
+    color: $white_color;
+    border-radius: $btn_border_radius;
+    border: 1px solid $span_color;
+    box-shadow: $btn_shadow;
+    font-size: 16px;
+}
+
+.input_style {
+    width: 570px;
+    height: 60px;
+    padding: 18px 24px;
+    background-color: $white_color;
+    border-radius: $input_border_radius;
+    border: 1px solid $input_border_color;
+    color: black;
+    opacity: 0, 5;
+    outline: none;
+    @include main_text;
+}
+
+.nav_style {
+    margin-right: 53px;
+    color: $header_nav_color;
+    cursor: pointer;
+}

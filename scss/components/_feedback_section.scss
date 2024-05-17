@@ -1,0 +1,41 @@
+.feedback_section {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    margin-top: 120px;
+    gap: 50px;
+
+    &_title {
+        font-size: 70px;
+        justify-self: center;
+        @include headline_text;
+        margin-bottom: 62px;
+
+        & span {
+            color: $span_color;
+        }
+
+    }
+
+    &_content {
+        width: 80%;
+        background-color: $background_color_3;
+        display: grid;
+        grid-auto-flow: column;
+        justify-self: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    &_quote {
+        font-style: italic;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    &_user span {
+        font-size: 14px;
+        color: $header_nav_color;
+        margin-top: 5px;
+    }
+}
